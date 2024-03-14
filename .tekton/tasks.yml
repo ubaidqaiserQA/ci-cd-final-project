@@ -61,5 +61,5 @@ spec:
       script: |
         #!/bin/bash
         set -e
-        pip install -r ./requirements.txt
+        pip install -r $(workspaces.source.path)/requirements.txt
         nosetests $(params.args)
